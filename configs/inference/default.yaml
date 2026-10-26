@@ -1,0 +1,10 @@
+inference:
+  num_classes: 11
+  ignore_index: 0
+  image_size: [768, 768]
+  batch_size: 1
+  num_workers: 0
+  device: auto
+
+output:
+  out_dir: results

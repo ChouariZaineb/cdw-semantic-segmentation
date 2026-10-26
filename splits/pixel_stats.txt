@@ -1,0 +1,16 @@
+total_images=430
+total_pixels=3592443790
+ignore_label=0
+ignore_pixels=1105793864
+labeled_pixels=2486649926
+class_0_pixels=1105793864
+class_1_pixels=890823277
+class_2_pixels=180845064
+class_3_pixels=93610147
+class_4_pixels=407461149
+class_5_pixels=69640165
+class_6_pixels=207215461
+class_7_pixels=306719325
+class_8_pixels=61139185
+class_9_pixels=232143951
+class_10_pixels=37052202

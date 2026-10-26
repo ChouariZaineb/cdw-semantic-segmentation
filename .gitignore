@@ -1,0 +1,29 @@
+# Data (do not version)
+data/
+dataset/
+**/JPEGImages/
+**/SegmentationClassPNG/
+**/SegmentationObjectPNG/
+
+# Outputs
+outputs/
+runs/
+logs/
+
+# Checkpoints
+checkpoints/
+weights/
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

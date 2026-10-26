@@ -1,0 +1,39 @@
+experiment:
+  name: multiphase
+  seed: 123
+
+model:
+  arch: student
+
+dataset:
+  dataset_root: ""
+  splits_dir: "splits"
+  num_classes: 11
+  ignore_index: 0
+  image_size: [768, 768]
+
+training:
+  batch_size: 2
+  num_workers: 0
+  grad_accum_steps: 1
+  weight_decay: 1.0e-4
+  patience: 5
+  class_weight_clip_max: 10.0
+  clip_grad_norm: null
+  epochs:
+    phase1: 4
+    phase2: 10
+    phase3: 30
+  lrs:
+    phase1:
+      head: 1.0e-4
+      backbone: 0.0
+    phase2:
+      head: 1.0e-4
+      backbone: 1.0e-5
+    phase3:
+      head: 5.0e-5
+      backbone: 5.0e-6
+
+output:
+  out_dir: runs
